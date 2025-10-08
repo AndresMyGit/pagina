@@ -1,0 +1,8 @@
+# Usa NGINX como servidor web
+FROM nginx:latest
+
+# Copia los archivos de tu sitio a la carpeta del servidor
+COPY . /usr/share/nginx/html
+
+# Expone el puerto 80 (Render lo usa automáticamente)
+EXPOSE 80
